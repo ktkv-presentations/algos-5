@@ -20,136 +20,249 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h1>
-					Beautiful presentations
-				</h1>
-				<h2>New features</h2>
-				<ul>
-					<li>Nerd icons </li>
-					<li><code class="js">(inline) => code("highlighting")</code></li>
-					<li>Automatic QR Code generation</li>
-					<li>and much more!</li>
-				</ul>
-			</section>
-			<section>
-				<h1>
-					Custom TokyoNight theme
-				</h1>
-				<h2 class="fragment">That has</h2>
-				<h3 class="fragment">Multi</h3>
-				<h4 class="fragment">Level</h4>
-				<h5 class="fragment">Heading</h5>
-				<h6 class="fragment">Coloring</h6>
-				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"></a> for the
-					colorscheme!</h6>
+				<h1>Определение и вызов подпрограмм</h1>
+				<img alt="https://github.com/ktkv-presentations/algos-5" data-type="qrcode">
 			</section>
 			<section>
 				<section>
-					<h1>Tailwind CSS</h1>
-					<div class="grid grid-cols-2 gap-8">
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
+					<h1>Подпрограмма</h1>
+					<p>независимые блоки кода, которые выполняют определённые задачи</p>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="border-b">
+							<h5>Функция</h5>
+							<p>независимый блок кода, предназначенный для выполнения определённой задачи</p>
 						</div>
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div class="col-span-2">
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
+						<div class="border-b">
+							<h5>Метод</h5>
+							<p>функция, которая "принадлежит" объекту или классу</p>
 						</div>
 					</div>
 				</section>
 				<section>
-					<h1>Custom classes</h1>
-					<div class="grid grid-cols-3 gap-8">
-						<div class="border-r">
-							<h5>border-r</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
+					<h1>Функции и методы позволяют</h1>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="border-b">
+							<h4>Упрощать разработку</h4>
+							<p>вместо того чтобы многократно писать один и тот же код, можно использовать функцию</p>
 						</div>
-						<div class="border-o">
-							<h5>border-o</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
+						<div class="border-b">
+							<h4>Повышать читаемость кода</h4>
+							<p>можно выделить ключевые моменты в программе и улучшить понимание её структуры</p>
 						</div>
-						<div class="border-y">
-							<h5>border-y</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
+						<div class="border-b">
+							<h4>Повторное использование кода</h4>
+							<p>можно использовать в других частях программы или даже в других проектах</p>
+						</div>
+						<div class="border-b">
+							<h4>Модульность</h4>
+							<p>позволяют разделять код на независимые компоненты, которые можно разрабатывать, тестировать и
+								модифицировать отдельно</p>
 						</div>
 					</div>
 				</section>
-			</section>
-			<section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<div>
-						Now also has Tokyo Night <code>highlight.js</code> highlighting implementation
+				<section>
+					<h1>Преимущества использования подпрограмм</h1>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="border-b">
+							<h4>Снижение дублирования кода</h4>
+							<p>один и тот же код не нужно писать несколько раз, он будет храниться в функции</p>
+						</div>
+						<div class="border-b">
+							<h4>Улучшение отладки и тестирования</h4>
+							<p>отдельные функции легче тестировать и отлаживать, чем большие блоки кода</p>
+						</div>
+						<div class="border-b">
+							<h4>Гибкость и расширяемость</h4>
+							<p>используя параметры и аргументы, можно адаптировать функцию для решения различных задач, не изменяя
+								её внутренний код</p>
+						</div>
+						<div class="border-b">
+							<h4>Читаемость и поддерживаемость</h4>
+							<p>функция с понятным именем и задачей делает код более понятным для других разработчиков</p>
+						</div>
 					</div>
-					<pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
 				</section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<h5>Inline code highlighting is now also supported!</h5>
-					<p>
-						Just wrap your code with <code>&lt;code&gt;</code> tag and get
-						highlighting like this <code class="js">const foo = () => {return bar}</code>!
-					</p>
+				<section>
+					<h1>Без использования функций</h1>
+					<pre><code data-trim data-noescape class="python">
+print("Привет, Алексей!")
+print("Привет, Анна!")
+print("Привет, Дмитрий!")
+							</code></pre>
+				</section>
+				<section>
+					<h1>С использованием функций</h1>
+					<pre><code data-trim data-noescape class="python">
+def greet(name):
+    print(f"Привет, {name}!")
+
+greet("Алексей")
+greet("Анна")
+greet("Дмитрий")
+							</code></pre>
+				</section>
+			</section>
+			</section>
+			<section>
+				<section>
+					<h1>Функции</h1>
+					<p>определяется с использованием ключевого слова <code class="python">def</code></p>
+					<pre><code data-trim data-noescape class="python">
+def имя_функции(параметры):
+		# тело функции
+		return результат
+				</code></pre>
+				</section>
+				<section>
+					<h1>Параметры функций</h1>
+					<p>Параметры функций задаются при её определении. Аргументы, передаваемые функции при вызове, соответствуют
+						этим параметрам</p>
+					<pre><code data-trim data-noescape class="python">
+def имя_функции(параметры):
+		# тело функции
+		return результат
+				</code></pre>
+					<div>где <code class="python">name</code> и <code class="python">message</code> — параметры, а <code
+							class="python">"Алексей"</code> и <code class="python">"Добро пожаловать"</code> — аргументы.</div>
+				</section>
+				<section>
+					<h1>Обязательные и необязательные параметры</h1>
+					<div class="grid grid-cols-2 gap-4">
+						<div>
+							<h4>Обязательные параметры</h4>
+							<p>параметры, которые должны быть переданы при вызове функции. Если они не передаются, возникнет ошибка
+							</p>
+						</div>
+						<div>
+							<h4>Необязательные параметры</h4>
+							<p>параметры с заданными значениями по умолчанию. Если аргумент не передан, используется значение по
+								умолчанию</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Пример с параметрами по умолчанию</h1>
+					<pre><code data-trim data-noescape class="python">
+def greet(name, message="Привет"):
+    print(f"{message}, {name}!")
+
+greet("Алексей")  # Вывод: Привет, Алексей!
+greet("Анна", "Добрый день")  # Вывод: Добрый день, Анна!
+				</code></pre>
+					<div><code class="python">message</code> имеет значение по умолчанию <code class="python">"Привет"</code>,
+						которое используется, если этот аргумент не указан при вызове функции</div>
+				</section>
+				<section>
+					<h1>Пример создания и вызова функции</h1>
+					<p>Определим функцию, которая вычисляет площадь прямоугольника, и продемонстрируем её вызов:</p>
+					<h1>Пример с параметрами по умолчанию</h1>
+					<pre><code data-trim data-noescape class="python">
+def calculate_area(length, width):
+    area = length * width
+    return area
+
+# Вызов функции с аргументами 5 и 3
+result = calculate_area(5, 3)
+print(result)  # Вывод: 15
+				</code></pre>
+				</section>
+				<section>
+					<h1>Отличие между функцией и методом</h1>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="border-b">
+							<h4>Функции</h4>
+							<p>могут быть определены и вызваны независимо, они не привязаны к какому-либо объекту</p>
+						</div>
+						<div class="border-b">
+							<h4>Методы</h4>
+							<p>функции, которые принадлежат объектам или классам. Они вызываются через экземпляр объекта, и часто
+								могут изменять его состояние</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Пример методы в классе</h1>
+					<pre><code data-trim data-noescape class="python">
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+calc = Calculator()
+print(calc.add(2, 3))  # Вывод: 5
+				</code></pre>
 				</section>
 			</section>
 			<section>
-				<h1>Mermaid for beautiful diagrams!</h1>
-				<div class="mermaid">
-					<pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre>
-				</div>
-				<h4>Check documentation <a href="https://mermaid.js.org/config/usage.html">here</a>!</h4>
+				<section>
+					<h1>Область видимости переменной</h1>
+					<h2>Область видимости</h2>
+					<p>часть программы, в которой переменная доступна для использования</p>
+					<div class="grid grid-cols-2 gap-4">
+						<div>
+							<h4>Локальная область видимости</h4>
+							<p>переменные внутри функции</p>
+						</div>
+						<div>
+							<h4>Глобальная область видимости</h4>
+							<p>Глобальная область видимости</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Локальные переменные</h1>
+					<p>Локальные переменные определяются внутри функций и доступны только внутри этих функций</p>
+					<pre><code data-trim data-noescape class="python">
+def my_function():
+    x = 10  # Локальная переменная
+    print(x)
+
+my_function()  # Вывод: 10
+print(x)  # Ошибка: переменная x не существует в глобальной области
+				</code></pre>
+				</section>
+				<section>
+					<h1>Глобальные переменные</h1>
+					<p>Глобальные переменные объявляются вне функций и доступны во всей программе. Они могут использоваться как
+						внутри функций, так и за их пределами</p>
+					<pre><code data-trim data-noescape class="python">
+x = 5  # Глобальная переменная
+
+def my_function():
+    print(x)  # Доступ к глобальной переменной внутри функции
+
+my_function()  # Вывод: 5
+print(x)  # Вывод: 5
+				</code></pre>
+				</section>
+				<section>
+					<h1>Изменение глобальных переменных внутри функции</h1>
+					<p>Чтобы изменить глобальную переменную внутри функции, нужно использовать ключевое слово <code
+							class="python">global</code></p>
+					<pre><code data-trim data-noescape class="python">
+x = 10
+
+def modify_global():
+    global x  # Объявляем, что x — глобальная переменная
+    x = 20  # Изменяем глобальную переменную
+
+modify_global()
+print(x)  # Вывод: 20
+				</code></pre>
+				</section>
 			</section>
 			<section>
-				<h1>Now supports Nerd font icons!</h1>
-				<div>Nerdy project that adds icons to font itself</div>
-				<h6>Checkout their site for icons like this <a href="https://www.nerdfonts.com/">󰖟</a>!
-				</h6>
-			</section>
-			<section>
-				<h1>Now supports automatic QRCode generation!</h1>
-				<div>With GoQR you can just add data-type and alt attributes to your <code
-						class="html">&lt;img alt="https://goqr.me/" data-type="qrcode" / &gt;</code> tag!</div>
-				<img class="r-stretch" alt="https://goqr.me/" data-type="qrcode" />
-				</h6>
-			</section>
-			<section>
-				<h1>New changes on the way!</h1>
+				<h1>Вложенные функции и замыкания</h1>
+				<h2>замыкания</h2>
+				<div>функции, которые "запоминают" переменные, определённые в их внешней функции</div>
+				<pre><code data-trim data-noescape class="python">
+def outer_function():
+    x = 10
+    def inner_function():
+        print(x)  # Доступ к переменной внешней функции
+    inner_function()
+
+outer_function()  # Вывод: 10
+				</code></pre>
 			</section>
 		</div>
 	</div>
@@ -172,22 +285,22 @@ var foo = {
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
 		// - https://revealjs.com/config/
-		
+
 		const colors = {
-    blue0: 'rgb(61, 89, 161)',
-    blue: 'rgb(122, 162, 247)',
-    cyan: 'rgb(125, 207, 255)',
-    magenta: 'rgb(187, 154, 247)',
-    orange: 'rgb(255, 158, 100)',
-    yellow: 'rgb(224, 175, 104)',
-    green: 'rgb(158, 206, 106)',
-    teal: 'rgb(26, 188, 156)',
-    red: 'rgb(255, 117, 127)',
-    red1: 'rgb(219, 75, 75)',
-    fg: 'rgb(192, 202, 245)',
-    bg: 'rgb(26, 27, 38)',
-		transparent: "#00000000"
-};
+			blue0: 'rgb(61, 89, 161)',
+			blue: 'rgb(122, 162, 247)',
+			cyan: 'rgb(125, 207, 255)',
+			magenta: 'rgb(187, 154, 247)',
+			orange: 'rgb(255, 158, 100)',
+			yellow: 'rgb(224, 175, 104)',
+			green: 'rgb(158, 206, 106)',
+			teal: 'rgb(26, 188, 156)',
+			red: 'rgb(255, 117, 127)',
+			red1: 'rgb(219, 75, 75)',
+			fg: 'rgb(192, 202, 245)',
+			bg: 'rgb(26, 27, 38)',
+			transparent: "#00000000"
+		};
 
 		Reveal.initialize({
 			hash: true,
